@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.lockhaven.bloom_gnatt.MainActivity">
+
+    <item
+        android:id="@+id/action_file"
+        android:title="File"
+        android:orderInCategory="0"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/menu_item_new"
+                android:title="New"/>
+            <item
+                android:id="@+id/menu_item_open"
+                android:title="Open"/>
+        </menu>
+    </item>
+    <!-- Ran out of time to implement, but will implement on spare time.
+        <item
+            android:id="@+id/action_edit"
+            android:title="Edit"
+            android:orderInCategory="1"
+            app:showAsActill implement on spare time.
+        <item
+            android:id="@+id/action_view"
+            android:title="View"
+            android:orderInCategory="2"
+            app:showAsAction="ifRoom">
+            <menu>
+                <item
+                    android:id="@+id/menu_item_view_card"
+                    android:title="Card View"/>
+                <item
+                    android:id="@+id/menu_item_view_graph"
+                    android:title="Graph View"/>
+            </menu>
+        </item>
+        -->
+
+    <item
+        android:id="@+id/action_help"
+        android:title="Help"
+        android:orderInCategory="99"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>

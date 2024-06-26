@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/activity_help.xml" value="0.278125" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/activity_load.xml" value="0.21960382513661203" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/activity_loader.xml" value="0.278125" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/activity_task.xml" value="0.18" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/content_main.xml" value="0.18515625" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/layout_dialog_new.xml" value="0.22" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/layout_gnatt.xml" value="0.1994645247657296" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/layout_project.xml" value="0.18" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/layout_recycler.xml" value="0.1" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/layout_task.xml" value="0.2" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/layout_task_dates.xml" value="0.17930327868852458" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/layout_task_top.xml" value="0.1" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/recycler_project.xml" value="0.25" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/layout/recycler_task.xml" value="0.25" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/menu/menu_dialog_new.xml" value="0.1" />
+        <entry key="..\:/Users/gamei/AndroidStudioProjects/GNATT/app/src/main/res/menu/menu_main.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

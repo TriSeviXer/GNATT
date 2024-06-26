@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textview_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_start_date"
+        app:layout_constraintRight_toRightOf="@id/button_start_date"
+        app:layout_constraintLeft_toLeftOf="@id/button_start_date"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_heading_1"
+        android:text="@string/placeholder_text_date"/>
+
+    <TextView
+        android:id="@+id/textview_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_end_date"
+        app:layout_constraintLeft_toLeftOf="@id/button_end_date"
+        app:layout_constraintRight_toRightOf="@id/button_end_date"
+
+        android:textAlignment="center"
+        android:textSize="@dimen/text_heading_1"
+        android:text="@string/placeholder_text_date"/>
+
+    <Button
+        android:id="@+id/button_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/textview_start_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_end_date"
+
+        android:textSize="@dimen/button_text_large"
+        android:text="@string/text_start"/>
+
+    <Button
+        android:id="@+id/button_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/textview_end_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/button_start_date"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:textSize="@dimen/button_text_large"
+        android:text="@string/text_end"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

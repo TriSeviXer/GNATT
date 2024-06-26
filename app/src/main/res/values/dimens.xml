@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Headings-->
+    <dimen name="text_heading_1">24sp</dimen>
+    <dimen name="text_heading_2">16sp</dimen>
+    <dimen name="text_subtext">10sp</dimen>
+
+    <!-- Button Text -->
+    <dimen name="button_text_large">24sp</dimen>
+    <dimen name="button_text_medium">16sp</dimen>
+    <dimen name="button_text_small">10sp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_extra_large">20dp</dimen>
+    <dimen name="margin_large">10dp</dimen>
+    <dimen name="margin_medium">5dp</dimen>
+    <dimen name="margin_small">3dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_large">10dp</dimen>
+
+    <!-- Divider/Separator -->
+    <dimen name="separator_thickness">1dp</dimen>
+    <dimen name="padding_extra_large">30dp</dimen>
+    <dimen name="text_paragraph">14sp</dimen>
+
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Ran out of time to properly put the text into string values.-->
+    <!-- This is the very last feature that was added. -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layout_tasks"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_large">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_heading_1"
+                        android:text="GANTT Task Manager"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/separator_thickness"
+                        android:alpha="0.5"
+                        android:background="@color/grey"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/text_heading_2"
+                        android:text="Version 1.0 - Michael Bloom"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_large">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_heading_1"
+                        android:text="Getting Started"/>
+
+                    <!-- Instructions for creating a project. -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/separator_thickness"
+                        android:alpha="0.5"
+                        android:background="@color/grey"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/text_heading_2"
+                        android:text="1. Creating a new project."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="1.1. To create a new project, tap on file -> new. A dialog will show."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="1.2. Inside the dialog, tap on the text feild under where it says 'project name.'"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="1.3. Once prompted with a on screen keyboard, write a name and tap create on the dialog. Note, do not leave the text field blank; project names are required."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="1.4. After tapping create a toast will appear with the new projects name; a new project was created."/>
+
+                    <!-- Instructions for opening a project. -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/separator_thickness"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:alpha="0.5"
+                        android:background="@color/grey"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/text_heading_2"
+                        android:text="2. Opening existing project."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="2.1. To open an existing project, tap on file -> open. A new activity will open."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="2.2. In the activity, a list of existing projects will show up. Tap on the desired project or scroll and tap on the desired project. Note, if there are no existing projects refer to '1. Creating a new project.' "/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="2.3. A new activity will open and will display all the projects tasks. A toast will appear with the projects name saying that it has successfully loaded the task."/>
+
+                    <!-- Creating a new task -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/separator_thickness"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:alpha="0.5"
+                        android:background="@color/grey"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/text_heading_2"
+                        android:text="3. Creating a new task."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="3.1. To create a new task, select the icon in the lower right hand corner."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="3.2. A form will appear with blank information."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="3.3. Once done filling out the form, tap the accept button to create the task. To cancel creating a task, in the upper left corner, tap the back arrow to cancel."/>
+
+                    <!-- Editing an existing task. -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/separator_thickness"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:alpha="0.5"
+                        android:background="@color/grey"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/text_heading_2"
+                        android:text="4. Modifiying an existing task."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="4.1. To create a new task, edit a task tap on the desired task."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="4.2. A form will appear with existing information filled out."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/text_paragraph"
+                        android:text="4.3. Once done editing, tap the accept button to keep changes. To cancel modifiying the task, in the upper left corner, tap the back arrow to cancel."/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edittext_name"
+
+        android:textSize="@dimen/text_heading_1"
+        android:text="@string/text_name"
+        android:labelFor="@id/edittext_name"/>
+
+    <TextView
+        android:id="@+id/textview_name_char_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/edittext_name"
+        app:layout_constraintLeft_toRightOf="@id/textview_name"
+        android:layout_margin="@dimen/margin_small"
+        android:textSize="@dimen/text_subtext"
+        android:text="@string/text_max_char_64" />
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textview_name"
+        app:layout_constraintBottom_toTopOf="@id/textview_description"
+        android:maxLength="64"
+        android:maxLines="1"
+        android:inputType="textAutoCorrect"/>
+
+    <TextView
+        android:id="@+id/textview_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/edittext_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edittext_description"
+
+        android:textSize="@dimen/text_heading_1"
+        android:text="@string/text_description"
+        android:labelFor="@id/edittext_description"
+        />
+
+    <TextView
+        android:id="@+id/textview_description_char_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/edittext_description"
+        app:layout_constraintLeft_toRightOf="@id/textview_description"
+        android:layout_margin="@dimen/margin_small"
+        android:textSize="@dimen/text_subtext"
+        android:text="@string/text_max_char_514"/>
+
+    <EditText
+        android:id="@+id/edittext_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textview_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:maxLength="514"
+        android:maxLines="10"
+        android:inputType="textAutoCorrect|textShortMessage|textMultiLine"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_recycler_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_large">
+
+            <TextView
+                android:id="@+id/recycler_task_textview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/recycler_task_textview_description"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_heading_1"
+                android:text="@string/placeholder_text_name"/>
+
+            <TextView
+                android:id="@+id/recycler_task_textview_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/recycler_task_textview_name"
+                app:layout_constraintBottom_toTopOf="@id/recycler_task_guideline"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:text="@string/placeholder_text_description"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/recycler_task_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.7"
+                />
+
+            <TextView
+                android:id="@+id/recycler_task_textview_sdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/recycler_task_guideline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/recycler_task_progress"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="@dimen/margin_large"
+                android:text="@string/placeholder_text_date"/>
+
+            <TextView
+                android:id="@+id/recycler_task_textview_edate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recycler_task_guideline"
+                app:layout_constraintLeft_toRightOf="@id/recycler_task_progress"
+                android:layout_margin="@dimen/margin_large"
+                android:text="@string/placeholder_text_date"/>
+
+            <ProgressBar
+                android:id="@+id/recycler_task_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recycler_task_guideline"
+                app:layout_constraintLeft_toRightOf="@id/recycler_task_textview_sdate"
+                app:layout_constraintRight_toLeftOf="@id/recycler_task_textview_edate"
+                />
+
+            <Button
+                android:id="@+id/recycler_task_button_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:drawableTop="@drawable/ic_baseline_delete_forever_24"
+                android:textSize="@dimen/margin_large"
+                android:text="@string/text_delete"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_thickness"
+                app:layout_constraintTop_toTopOf="@id/recycler_task_guideline"
+                android:alpha="0.5"
+                android:background="@color/grey"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

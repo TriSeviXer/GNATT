@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- App Name -->
+    <string name="app_name">GANTT</string>
+
+    <!-- Keys -->
+    <string name="key_current_project">CURRENT_PROJECT</string>
+    <string name="key_current_task">CURRENT_TASK</string>
+    <string name="key_current_modify">CURRENT_MODIFY</string>
+    <string name="key_status">KEY_CURRENT_OK</string>
+
+    <!-- Status -->
+    <string name="status_ok">OK</string>
+
+    <!-- Text -->
+    <string name="text_project_name">Project Name</string>
+    <string name="text_name">Name</string>
+    <string name="text_description">Description</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_created">Created:</string>
+    <string name="text_modified">Modified:</string>
+    <string name="text_start">Start</string>
+    <string name="text_end">End</string>
+
+    <!-- Place Holder Text -->
+    <string name="placeholder_text_project_name">Project Name</string>
+    <string name="placeholder_text_description">DESCRIPTION</string>
+    <string name="placeholder_text_name">NAME</string>
+    <string name="placeholder_text_date">01/01/1970</string>
+
+    <!-- Char Max Text -->
+    <string name="text_max_char_64">max 64</string>
+    <string name="text_max_char_514">max 514</string>
+    <string name="key_start_year">KEY_START_YEAR</string>
+    <string name="key_start_month">KEY_START_MONTH</string>
+    <string name="key_start_day">KEY_START_DAY</string>
+    <string name="key_end_year">KEY_END_YEAR</string>
+    <string name="key_end_month">KEY_END_MONTH</string>
+    <string name="key_end_day">KEY_END_DAY</string>
+    <string name="text_create">Create</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_new_project">New Project</string>
+
+</resources>
